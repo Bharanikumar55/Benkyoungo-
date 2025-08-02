@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Benkyoungo! | Hiragana Chart</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #fffafc;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px;
+      background: #ffdee9;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #d63384;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #555;
+      font-size: 0.9rem;
+      padding: 5px 10px;
+      background-color: #eee;
+      border-radius: 5px;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 40px 10px;
+      align-items: center;
+    }
+
+    .kana-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    .kana-card {
+      background-color: #fff0f5;
+      border: 2px solid #ffc0cb;
+      border-radius: 10px;
+      padding: 12px;
+      width: 120px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .kana-char {
+      font-size: 2.5rem;
+      color: #e91e63;
+    }
+
+    .romaji {
+      font-size: 1.2rem;
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .example {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hiragana Chart</h1>
+    <a href="index.html" class="back-btn">⬅ Back to Home</a>
+  </header>
+
+  <section class="grid-container">
+    <!-- Grid rows for each Hiragana set -->
+    <div class="kana-row">
+      <div class="kana-card"><div class="kana-char">あ</div><div class="romaji">a</div><p class="example">あさ (asa) - Morning</p></div>
+      <div class="kana-card"><div class="kana-char">い</div><div class="romaji">i</div><p class="example">いぬ (inu) - Dog</p></div>
+      <div class="kana-card"><div class="kana-char">う</div><div class="romaji">u</div><p class="example">うみ (umi) - Sea</p></div>
+      <div class="kana-card"><div class="kana-char">え</div><div class="romaji">e</div><p class="example">えき (eki) - Station</p></div>
+      <div class="kana-card"><div class="kana-char">お</div><div class="romaji">o</div><p class="example">おちゃ (ocha) - Tea</p></div>
+    </div>
+
+    <div class="kana-row">
+      <div class="kana-card"><div class="kana-char">か</div><div class="romaji">ka</div><p class="example">かさ (kasa) - Umbrella</p></div>
+      <div class="kana-card"><div class="kana-char">き</div><div class="romaji">ki</div><p class="example">き (ki) - Tree</p></div>
+      <div class="kana-card"><div class="kana-char">く</div><div class="romaji">ku</div><p class="example">くち (kuchi) - Mouth</p></div>
+      <div class="kana-card"><div class="kana-char">け</div><div class="romaji">ke</div><p class="example">け (ke) - Hair</p></div>
+      <div class="kana-card"><div class="kana-char">こ</div><div class="romaji">ko</div><p class="example">こども (kodomo) - Child</p></div>
+    </div>
+
+    <div class="kana-row">
+      <div class="kana-card"><div class="kana-char">さ</div><div class="romaji">sa</div><p class="example">さる (saru) - Monkey</p></div>
+      <div class="kana-card"><div class="kana-char">し</div><div class="romaji">shi</div><p class="example">しろ (shiro) - White</p></div>
+      <div class="kana-card"><div class="kana-char">す</div><div class="romaji">su</div><p class="example">すし (sushi) - Sushi</p></div>
+      <div class="kana-card"><div class="kana-char">せ</div><div class="romaji">se</div><p class="example">せみ (semi) - Cicada</p></div>
+      <div class="kana-card"><div class="kana-char">そ</div><div class="romaji">so</div><p class="example">そら (sora) - Sky</p></div>
+    </div>
+
+    <div class="kana-row">
+      <div class="kana-card"><div class="kana-char">た</div><div class="romaji">ta</div><p class="example">たまご (tamago) - Egg</p></div>
+      <div class="kana-card"><div class="kana-char">ち</div><div class="romaji">chi</div><p class="example">ちず (chizu) - Map</p></div>
+      <div class="kana-card"><div class="kana-char">つ</div><div class="romaji">tsu</div><p class="example">つき (tsuki) - Moon</p></div>
+      <div class="kana-card"><div class="kana-char">て</div><div class="romaji">te</div><p class="example">てがみ (tegami) - Letter</p></div>
+      <div class="kana-card"><div class="kana-char">と</div><div class="romaji">to</div><p class="example">とけい (tokei) - Clock</p></div>
+    </div>
+
+    <!-- Additional rows for na, ha, ma, ya, ra, wa, n go here -->
+
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Benkyoungo! | Daily Quiz - Day 1</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5faff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #caf0f8;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #023e8a;
+    }
+
+    .quiz-container {
+      margin: 30px auto;
+      max-width: 600px;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .flashcard {
+      font-size: 2rem;
+      padding: 20px;
+      background-color: #edf6f9;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.6s;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    button.option {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    button.option.correct {
+      background-color: #b9fbc0;
+    }
+
+    button.option.wrong {
+      background-color: #ffb5a7;
+    }
+
+    #nextBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .score-board {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #023e8a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Benkyoungo! Quiz - Day 1</h1>
+  </header>
+
+  <div class="quiz-container">
+    <div class="flashcard" id="question">Loading...</div>
+    <div class="options" id="options"></div>
+    <button id="nextBtn">Next</button>
+    <div class="score-board" id="score"></div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
