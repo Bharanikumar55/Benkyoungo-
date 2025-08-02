@@ -83,5 +83,4 @@ Benkyoungo is still under development and meant to be a **base app for learning 
 
 Feel free to fork, contribute, and learn along! 🌸
 
-## 📁 File Structure
 
